@@ -4,7 +4,7 @@ body{
     line-height: 1.5em;
     padding: 0;
     margin: 0;
-    background-color: rgb(250, 242, 248);
+    background-color: white;
   overflow-x: hidden;
 }
 section ul li{
@@ -16,140 +16,201 @@ section ul li{
     width: 80%;
     margin: auto; /* will move the content to the middle*/
     overflow: hidden;   
+    
 }
 
 .button{
-    height: 38px;
-    background-color: rgb(128, 20, 38);
-    border: 0;
+    height: 48px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: rgba(228, 192, 198, 0);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.842);
+    border: 0px solid rgb(207, 201, 201);
+
+  
 }
 .button:hover{
-    background-color: whitesmoke;
-    color: grey;
-    font-size: 17px;
+  
     cursor: pointer;
+   
+ background-color: transparent;
+    border: 0.5px solid white;
+    
+  
 }
 header{
-    background-color: rgb(172, 31, 120);
-    opacity:0.9;
+    background-color:transparent;
   color: whitesmoke;
     padding-top: 5px;
-    min-height: 75px;
-    border-bottom: pink 3px solid;
-  position: fixed;
+    min-height: 85px;
+  position: absolute;
   top: 0;
   width:100%;  
+  z-index: 1;
 }
-#header-img{
-  border-radius:100px;
-}
+
 header a{
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
+    font-weight: 200;
     text-transform: uppercase;
     font-size: 16px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid rgb(114, 107, 107);
+    padding: 25px;
 }
 
 header ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    
+    z-index:1;
+    display: flex;
 }
 header li{
-   float: left;
-   display: inline;
+
   padding: 0px 20px 0px 20px;
+  
     
 }
 
-header #branding{
-    float: left;
-}
+
 
 header nav{
     float:right;
     margin-top: 40px;
+
 }
-header .current a{
-    color: #ffebcd;
-    font-weight: bold;
-}
+
 header a:hover{
-    color: black;
-    font-weight: bolder;
+    color: white;
+    border-radius: 100%;
+    padding: 25px;
+    border: 1px solid rgb(246, 241, 241);
 }
 #header-img{
-    width: 95px;
+    width: 55px;
     height: 87px;
 }
+#over-lay{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.466);
+  
+}
 #showcase{
-    min-height: 550px;
-    background: url('https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat 0px -90px;
-  background-size: cover;
+    height: 100vh;
+    background: url('bread.jpg') no-repeat;
+    background-size: cover;
     text-align: center;
     color:white;
 }
+
 #showcase h1{
-    margin-top:150px;
-    font-size: 55px;
-    background-color: black;
-    padding: 25px;
-    opacity:
+  font-family: 'Tangerine', serif;
+  font-weight: 350;
+    margin-top:320px;
+    text-align: center;
+    font-size: 85px;
+    margin-left: 60px;
     width:85%;
     line-height: 55px;
+   
 }
 #showcase p{
     font-size: 30px; 
 }
-#newsletter{
-    padding: 20px;
-    background-color: rgb(172, 31, 120); 
-}
-#newsletter h1{
-    float: left;
-}
-#newsletter form{
-    float: right;
-    margin-top: 20px;
-}
-#newsletter input[type="email"]{
-    padding:4px;
-    height:25px;
-    width: 250px;
-}
+
 #boxes{
-  width:100%;
+  padding-top: 90px;
+  width:50%;
+margin: auto;
+  height:auto;
+display: flex;
+margin-top: 90px;
+width: 80%;
+  padding: 0px;
+justify-content: center;
+  
 }
 h4{
-  font-size: 18px;
+  font-size: 15px;
+  margin: 0;
+}
+#mid{
+  background-color:white;
+  height: 60vh;
+  
+  text-align: center;
+}
+.h1{
+
+  text-align: center;
+  background-color:white;
+  font-family: 'Dancing Script';
+  font-size: 45px;
+  font-weight: 500;
 }
 #boxes h3{
-  margin-top: -2px;
   padding: 50px 0 50px 0;
   font-size: 22px;
-  background: white;
   width:100%;
   text-align: center;
 }
-#boxes p{
-  width:80%;
-  margin-left: 40px;
-}
+
  #boxes .box{
-     float: left;
-     width:30%;
-     padding-right: 35px;
+     color: rgb(7, 7, 7);
+     width:15%;
+     height: 200px;
+     background-color: rgba(204, 199, 190, 0.466);
      text-align: center;
-      margin-bottom: 40px;
-      margin-top: 40px;
-   font-size: 14px;
+   font-size: 11.5px;
+  margin-right: 20px;
  }
  #boxes .box img{
-width: 60px;
+width: 50px;
+ }
+
+ #boxes .box p{
+   width: 90%;
+   margin-left: 10px;
+   text-align: center;
+ }
+
+ .cake{
+   flex: 4;
+   display: flex;
+   justify-self: end;
+   height: 37rem;
+   border-radius: 100%;
+ }
+ .cake img{
+ width:50%;
+ height:400px;
+ margin-top: 80px;
+ margin-left: 8rem;
+ border-radius: 100%;
+ box-shadow: 55px 55px rgba(182, 181, 181, 0.466);
+ }
+ .mid-pic{
+   width: 10px;
+   height: 10px;
+ }
+ .box{
+   padding:10px;
+   width: 50%;
+
+ }
+#work-sec{
+  height: 100vh;
+}
+ #pack-sec h1{
+   text-align: center;
+   font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
  }
 #work .box{
   margin: auto;
@@ -157,55 +218,119 @@ width: 60px;
   margin-bottom: 150px;
   text-align:center;
 }
-.video{
-  text-align:center;
-  padding: 0px 0 40px 0;
-   background: pink;
+
+/* contact me */
+.form{
+  background-color: transparent;
+
 }
-#video{
-  border-radius: 50px
+
+#contact h1{
+  padding-top: 50px;
+  font-family: 'Dancing Script';
+  font-size: 45px;
+  font-weight: 500;
+  color: #ffffff;
 }
-.video h3{
-  padding: 20px;
-  font-size: 22px;
-  background: white;
-  text-align: center;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%; 
+  padding: 12px;
+  border: 1px solid rgb(168, 166, 166); 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
 }
-#packages{
-  margin:auto;
-  margin-top:10px;
-  text-align: center;
-  width:90%;
-  display:flex;
+
+input[type="submit"] {
+  background-color: white;
+  color: rgb(71, 68, 68);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: rgb(71, 68, 68);
+  color: white;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border-radius: 20px;
+ background-color: rgba(245, 240, 240, 0.918);
+  padding: 80px;
+  width: 30%;
+  margin: auto;
   justify-content: center;
-} 
-
-  
-#packages .box{
-  border-right: 1px grey solid;
-  padding: 15px;
-  border-top:2px grey solid;
-  border-left: 2px grey solid;
-  
 }
-
-#packages h3{
-  color:whitesmoke;
-  background: purple;
-  border-right: 6px white solid;
-  padding: 10px 0px 10px 0px;
+.overlay{
+ height: 100vh;
+  background-color: rgba(0, 0, 0, 0.575);
 }
-#work{ 
+#contact {
+height: 100vh;
+  text-align: center;
+  color: #000;
+  background-image: url('contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#contact .overlay p{
+  font-family: 'Dancing Script';
+  font-size: medium;
+}
+#packages {
   width:100%;
   display:flex;
-  justify-content: center;
+  padding-bottom: 120px;
+
+} 
+#packages p{
+  width: 70%;
+margin-left: 65px;
+text-align: center;
+  margin-bottom: 0rem;
+  
 }
-#work-sec h3{
-  padding: 30px;
-  font-size: 22px;
-  background: white;
-   margin-top:100px;
+
+#packages h2{
+  color:black;
   text-align: center;
+}
+.service-pic{
+  margin: auto;
+  width: 40%;
+
+}
+
+.work-overlay{ 
+  height: 100vh;
+    background-size: cover;
+    color:white;
+  
+  background-color: rgba(0, 0, 0, 0.829);
+}
+#work{
+background-image: url('dough.jpg');
+}
+
+#work-sec h4{
+  font-weight: 300;
+  padding: 60px;
+  font-size: 42px;
+  text-align: center;
+  color:white;
+  text-align: center;
+   font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+  
 }
 #work-done{
     text-align: center;
@@ -214,11 +339,29 @@ width: 60px;
 
 .img{
   width:260px;
-  border-radius: 30px;
   padding:0 20px 30px 0px;
 }
-div.box2{
-  width:200px;
+.work-img{
+  width:100%;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border-radius: 5px;
+  padding: 20px;
+
+  justify-content: center;
+}
+.iconx {
+  padding: 18px;
+  color: rgb(247, 245, 245);
+}
+.iconx:hover {
+  color: #000;
 }
 footer {
   margin-top: 0px;
