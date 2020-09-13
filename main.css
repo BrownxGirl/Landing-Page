@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -6,6 +9,7 @@ body{
     margin: 0;
     background-color: white;
   overflow-x: hidden;
+
 }
 section ul li{
   list-style: none;
@@ -28,8 +32,8 @@ section ul li{
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgba(0, 0, 0, 0.842);
-    border: 0px solid rgb(207, 201, 201);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(207, 201, 201);
 
   
 }
@@ -37,8 +41,8 @@ section ul li{
   
     cursor: pointer;
    
- background-color: transparent;
-    border: 0.5px solid white;
+ background-color: #000;
+    border: 1px solid rgb(7, 7, 7);
     
   
 }
@@ -99,7 +103,7 @@ header a:hover{
 }
 #over-lay{
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.466);
+  background-color: rgba(0, 0, 0, 0.555);
   
 }
 #showcase{
@@ -118,7 +122,7 @@ header a:hover{
     font-size: 85px;
     margin-left: 60px;
     width:85%;
-    line-height: 55px;
+    line-height: 65px;
    
 }
 #showcase p{
@@ -126,14 +130,13 @@ header a:hover{
 }
 
 #boxes{
-  padding-top: 90px;
+
   width:50%;
 margin: auto;
   height:auto;
 display: flex;
-margin-top: 90px;
+margin-top: 80px;
 width: 80%;
-  padding: 0px;
 justify-content: center;
   
 }
@@ -141,11 +144,9 @@ h4{
   font-size: 15px;
   margin: 0;
 }
-#mid{
-  background-color:white;
-  height: 60vh;
-  
-  text-align: center;
+#pack-sec{
+height: 80vh;
+margin-top: 5rem;
 }
 .h1{
 
@@ -155,24 +156,27 @@ h4{
   font-size: 45px;
   font-weight: 500;
 }
-#boxes h3{
-  padding: 50px 0 50px 0;
-  font-size: 22px;
-  width:100%;
-  text-align: center;
+#boxes .box p{
+  font-size: 17px;
+  width: 80%;
+  margin: 0;
+  line-height: 15px;
 }
 
  #boxes .box{
      color: rgb(7, 7, 7);
-     width:15%;
-     height: 200px;
-     background-color: rgba(204, 199, 190, 0.466);
+     width:10%;
+     height: 90px;
+     border-radius: 100%;
+     background-color: rgba(141, 116, 63, 0.466);
      text-align: center;
-   font-size: 11.5px;
   margin-right: 20px;
+  margin-top: 3.5rem;
+  padding: 20px;
  }
  #boxes .box img{
-width: 50px;
+width: 40px;
+
  }
 
  #boxes .box p{
@@ -227,6 +231,7 @@ width: 50px;
 
 #contact h1{
   padding-top: 50px;
+  margin: 0;
   font-family: 'Dancing Script';
   font-size: 45px;
   font-weight: 500;
@@ -235,7 +240,7 @@ width: 50px;
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 50%; 
+  width: 85%; 
   padding: 12px;
   border: 1px solid rgb(168, 166, 166); 
   border-radius: 4px; 
@@ -290,7 +295,7 @@ height: 100vh;
 #packages {
   width:100%;
   display:flex;
-  padding-bottom: 120px;
+ 
 
 } 
 #packages p{
@@ -365,8 +370,8 @@ background-image: url('dough.jpg');
 }
 footer {
   margin-top: 0px;
-  background-color: #ccc;
-  padding:20px;
+  background-color: rgb(141, 136, 136);
+  padding:10px;
 }
 
 footer ul {
@@ -389,17 +394,29 @@ footer span{
   display: flex;
   justify-content: center;
   font-size: 13px;
-  color: #444;
+  color: rgb(243, 239, 239);
+}
+@media(max-width:330px){
+  
+  #contact{
+    height: 120vh;
+  }
+.overlay{
+  height: 120vh;
+}
+
+  footer{
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 700px){
   
 
-  #header-img{
-display:none;
-  }
   
   #header a{
-    font-size: 12px;
+    font-size: 10px;
+    padding: 12px;
+    border-radius: 40px;
   }
   #header{
     padding-top:0;
@@ -418,9 +435,8 @@ display:none;
   }
   #boxes .box{
    
-   
-      margin-bottom: 10px;
-      margin-top: 20px;
+   margin: auto;
+
 
  }
   
@@ -444,35 +460,82 @@ display:none;
     margin: auto; /* will move the content to the middle*/
     overflow: hidden;
   }
-  #packages.box{
-    width: 90%;
-    padding: 8px;
-    font-size: 13px;
+
+  #packages p{
+    margin: auto;
   }
-  
+
 #showcase{
 
-    min-height: 550px;
-    background: url('https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat -88px 0px;
   background-size: cover;
     text-align: center;
-    color:white;
+    
 }
-  #work{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+#showcase h1{
+  margin-top: 200px;
+  font-size: 60px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.button{
+  background-color: antiquewhite;
+  color: #000;
+}
+
+#pack-sec{
+  height: 175vh;
+}
+
+#boxes{
+  display: flex;
+  flex-direction: row;
+flex-wrap: nowrap;
+
+}
+#boxes .box{
+  width: 15%;
+  height: 60px;
+  margin-top: 2rem;
+
+ 
+}
+#boxes .box p{
+  font-size: 10px;
+  width: 100%;
+  margin: 0;
+  line-height: 13px;
+}
+#boxes .box img {
+  width: 20px;
+}
+
+#work-sec h4{
+  line-height: 45px;
+}
+
   #work img{
-    text-align: center;
-    padding: 20px;
+    padding: 0px;
+    width: 95%;
   }
-  .img{
-  
-  width:80%;
-  padding:5px;
+  .contact-container{
+    width: 50%;
+    padding: 50px;
+  }
+form{
+  margin-right:0px;
 }
-  
+  input[type="text"],
+input[type="email"],
+textarea {
+  width: 120%; 
+  padding: 12px;
+  border: 1px solid rgb(168, 166, 166); 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+
+  resize: vertical;
+}
+
 
 }
